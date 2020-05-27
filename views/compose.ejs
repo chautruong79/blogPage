@@ -1,0 +1,17 @@
+<%- include('./partials/header'); -%> 
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name='title'>
+        <label>Post</label>
+        <textarea  class="form-control" name="body" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+
+<%- include('./partials/footer'); -%>
+
+alias mongod="/c/Program\ files/MongoDB/Server/4.2/bin/mongod.exe"
+alias mongo="/c/Program\ Files/MongoDB/Server/4.2/bin/mongo.exe"
