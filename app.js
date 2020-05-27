@@ -42,7 +42,7 @@ app.post('/compose', (req, res) => {
   res.redirect('/');
 });
 
-app.get('/:postName', (req, res) => {
+app.get('/posts/:postName', (req, res) => {
   for (let i =0; i< posts.length; i++){
     if (string.lowerCase(posts[i].title) === string.lowerCase(req.params.postName)) {
       return res.render('post',{title: posts[i].title, content: posts[i].content})
